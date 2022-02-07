@@ -1,0 +1,13 @@
+10/10
+
+- Test cases look good. Have you figured out how much of your code
+  they cover?
+- The private final string's for your operations are going to add
+  up quickly and become quite unmanageable. You should look at
+  a data structure to manage them along with the execute() method
+  (which will start to get huge soon).
+- execute() seems to do multiple things; extracts the right number
+  of operands _and_ calls the operator function. In addition in
+  some cases throws errors. What happens if there are not enough
+  operands on the stack?
+  

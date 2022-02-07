@@ -1,0 +1,15 @@
+10/10
+
+Good work thus far.
+
+- It looks like you have a good number of test cases and coverage for your code.
+
+- You have three separate maps for 0, 1, and 2 operand methods. Could you combine them into one? Would reduce the complexity of your code to something like...
+
+  if (allOps.keySet().contains(op)) {
+        executeOp(allOps.get(op));
+  }
+
+	What would you have to change, to make that happen? 
+
+- Is it time to break the one ever-growning RPNCalc.java into modules in some way? Think about how to make it closed for modification but open for extension. Your map is a good base that would support that, if "add-on" modules could add their own operations to the map, then they could register themselves at startup and get called when needed.

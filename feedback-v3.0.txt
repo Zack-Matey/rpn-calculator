@@ -1,0 +1,7 @@
+10/10
+
+- good work at breaking up the execute() method!
+
+- I'm curious what the authors would think of the lambda functions. They are short and really get to the point, but on the other hand they are somewhat new in the grand scheme of things. Does the naming of them obscure their functionality? E.g. ODD is really a function but it looks a lot like a member variable. Not suggesting you change anything in your code.
+
+- Should the fillMaps be broken up? It seems there is an affinity for the operations to the class that implements them. Perhpas you could pass your master map to a method of those classes and it could "fill in" the map. Thus keeping the changes into one place when you add a new operations. Say for instance you wanted to add a new unary operation (perhaps increment '++'). With your current scheme you would have to modify both RPNUnaryOp.java and RPNCalc.java. Could you refactor so that you only had to modify RPNUnaryOp?
